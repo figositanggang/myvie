@@ -1,0 +1,61 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html {
+  transition: all 0.25s;
+}
+
+body {
+  /* overflow-y: hidden; */
+}
+
+.dark,
+.dark body {
+  background: #1a1a1a;
+  color: white;
+}
+
+.dark nav {
+  background: #14181d;
+}
+
+.dark #sidebar {
+  background: #14181d;
+}
+
+.dark #movie-card {
+  box-shadow: 10px 10px 10px rgba(255, 255, 255, 0);
+}
+
+.dark #movie-card:hover {
+  box-shadow: 0px 0px 200px rgba(0, 255, 255, 0.25);
+  background: white;
+  border-radius: 0;
+}
+
+#movie-card::after {
+  text-shadow: 0px 0px 5px black;
+  font-weight: bold;
+  padding: 0 0.5rem;
+}
+
+#movie-card:hover img {
+  border-radius: 0;
+}
+
+input {
+  background: transparent;
+}
+
+#category-title {
+  text-shadow: 0px 0px 50px white;
+}
+
+#category-title:hover {
+  text-shadow: 0px 0px 50px rgba(0, 255, 255, 1);
+}
+
+#sidebar a.active {
+  background-color: rgb(8, 132, 128);
+}
